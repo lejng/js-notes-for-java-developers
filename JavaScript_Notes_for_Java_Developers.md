@@ -5,7 +5,7 @@
 - [2. Strings](#2-strings)  
 - [3. Objects](#3-objects)  
 - [4. Collections](#4-collections)  
-  - [List](#list)  
+  - List  
   - Map  
   - Set 
   - Object.keys, values, entries
