@@ -1,5 +1,22 @@
 # Java Script Notes for Java Developers
 
+## 📘 Table of Contents
+- [1. Variables](#1-variables)  
+- [2. Strings](#2-strings)  
+- [3. Objects](#3-objects)  
+- [4. Collections](#4-collections)  
+  - List  
+  - Map  
+  - Set 
+  - Object.keys, values, entries
+- [5. Functions](#5-functions)  
+- [6. Classes](#6-classes)  
+- [7. Promise and async/await](#7-promise-and-asyncawait)  
+  - Promise 
+  - Async and await 
+
+---
+
 ## 1. Variables
 - Java
 ```Java
@@ -7,7 +24,7 @@ String name = "John";
 final String CONSTANT = "value";
 ```
 - Java Script
-```
+```JavaScript
 let name = "John";     
 const CONSTANT = "value";
 // do not use var declaration old aproach
@@ -23,7 +40,7 @@ templat.equalsIgnoreCase(name);
 str.length();
 ```
 - Java Script
-```
+```JavaScript
 let name = "John";     
 let template = `Hello ${name}`;
 template === name;
@@ -32,7 +49,7 @@ str.length;
 ```
 
 ## 3. Objects
-```declarative
+```JavaScript
 let user = {     // an object
   name: "John",  // by key "name" store value "John"
   age: 30        // by key "age" store value 30
@@ -44,7 +61,7 @@ alert( user.age ); // 30
 
 ## 4. Collections
 - List
-```
+```JavaScript
 // list
 let arr = [];
 const users = ["John", "Anna", "Mike"];
@@ -62,7 +79,7 @@ const upper = users.map(name => name.toUpperCase());
 arr.forEach(item => console.log(item));
 ```
 - Map
-```declarative
+```JavaScript
 const userMap = new Map();
 // size
 userMap.size();
@@ -85,7 +102,7 @@ Array.from(userMap.keys());
 Array.from(userMap.values());
 ```
 - Set
-```declarative
+```JavaScript
 let set = new Set("oranges", "apples");
 set.add("bananas");
 // set keeps only unique values
@@ -101,7 +118,7 @@ set.forEach((value, valueAgain, set) => {
 });
 ```
 - Object.keys, values, entries
-```declarative
+```JavaScript
 let obj = new Map([
     ['cucumber', 500],
     ['tomatoes', 350],
@@ -121,7 +138,7 @@ public class Calculator {
 }
 ```
 - Java Script
-```
+```JavaScript
 function add(a, b) {
     return a + b;
 }
@@ -146,7 +163,7 @@ public class Person {
 }
 ```
 - Java Script
-```
+```JavaScript
 class Person {
     constructor(name) {
         this.name = name;
@@ -160,7 +177,7 @@ class Person {
 
 ## 7. Promise and async/await
 - Promise
-```declarative
+```JavaScript
 let userData = null;
 fetch('https://jsonplaceholder.typicode.com/users/1')
     .then(response => response.json())
@@ -177,7 +194,7 @@ console.log('Response:', userData); // null
 
 ```
 - Async and await
-```declarative
+```JavaScript
 async function fetchData() {
     const data = await fetch('/api').then(r => r.json());
     console.log(data);
@@ -197,5 +214,4 @@ const fetchDataArrayFunction = async () => {
 fetchData();
 fetchDataExample2();
 fetchDataArrayFunction();
-
 ```
