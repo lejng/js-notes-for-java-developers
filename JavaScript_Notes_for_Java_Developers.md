@@ -24,7 +24,7 @@ String name = "John";
 final String CONSTANT = "value";
 ```
 - Java Script
-```
+```JavaScript
 let name = "John";     
 const CONSTANT = "value";
 // do not use var declaration old aproach
