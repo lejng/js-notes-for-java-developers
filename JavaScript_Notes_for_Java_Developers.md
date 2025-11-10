@@ -1,5 +1,22 @@
 # Java Script Notes for Java Developers
 
+## 📘 Table of Contents
+- [1. Variables](#1-variables)  
+- [2. Strings](#2-strings)  
+- [3. Objects](#3-objects)  
+- [4. Collections](#4-collections)  
+  - [List](#list)  
+  - [Map](#map)  
+  - [Set](#set)  
+  - [Object.keys, values, entries](#objectkeys-values-entries)  
+- [5. Functions](#5-functions)  
+- [6. Classes](#6-classes)  
+- [7. Promise and async/await](#7-promise-and-asyncawait)  
+  - [Promise](#promise)  
+  - [Async and await](#async-and-await)  
+
+---
+
 ## 1. Variables
 - Java
 ```Java
@@ -197,5 +214,4 @@ const fetchDataArrayFunction = async () => {
 fetchData();
 fetchDataExample2();
 fetchDataArrayFunction();
-
 ```
